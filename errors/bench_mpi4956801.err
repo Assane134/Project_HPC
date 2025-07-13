@@ -1,0 +1,43 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"gcc"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "gcc"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+
+The following have been reloaded with a version change:
+  1) GCCcore/9.3.0 => GCCcore/11.3.0
+  2) binutils/2.34-GCCcore-9.3.0 => binutils/2.38-GCCcore-11.3.0
+  3) zlib/1.2.11-GCCcore-9.3.0 => zlib/1.2.12-GCCcore-11.3.0
+
+dam_break_rusanov_mpi.c: In function ‘main’:
+dam_break_rusanov_mpi.c:289:5: warning: ‘free’ called on pointer to an unallocated object [-Wfree-nonheap-object]
+  289 |     free(h);
+      |     ^~~~~~~
+dam_break_rusanov_mpi.c:113:10: note: returned from ‘__builtin_alloca_with_align’
+  113 |   double h[L], u[L], hn[L], un[L];
+      |          ^
+dam_break_rusanov_mpi.c:290:5: warning: ‘free’ called on pointer to an unallocated object [-Wfree-nonheap-object]
+  290 |     free(u);
+      |     ^~~~~~~
+dam_break_rusanov_mpi.c:113:16: note: returned from ‘__builtin_alloca_with_align’
+  113 |   double h[L], u[L], hn[L], un[L];
+      |                ^
+dam_break_rusanov_mpi.c:291:5: warning: ‘free’ called on pointer to an unallocated object [-Wfree-nonheap-object]
+  291 |     free(W);
+      |     ^~~~~~~
+dam_break_rusanov_mpi.c:114:10: note: returned from ‘__builtin_alloca_with_align’
+  114 |   double W[2][L], Wn[2][L]; // flux[2][NX - 1];
+      |          ^
+dam_break_rusanov_mpi.c:292:5: warning: ‘free’ called on pointer to an unallocated object [-Wfree-nonheap-object]
+  292 |     free(Wn);
+      |     ^~~~~~~~
+dam_break_rusanov_mpi.c:114:19: note: returned from ‘__builtin_alloca_with_align’
+  114 |   double W[2][L], Wn[2][L]; // flux[2][NX - 1];
+      |                   ^~

@@ -1,0 +1,18 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"gcc"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "gcc"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+
+The following have been reloaded with a version change:
+  1) GCCcore/9.3.0 => GCCcore/11.3.0
+  2) binutils/2.34-GCCcore-9.3.0 => binutils/2.38-GCCcore-11.3.0
+  3) zlib/1.2.11-GCCcore-9.3.0 => zlib/1.2.12-GCCcore-11.3.0
+

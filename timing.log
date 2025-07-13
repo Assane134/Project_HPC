@@ -1,0 +1,17 @@
+srun: ROUTE: split_hostlist: hl=slurm-compute-h23a8-u14-svn3 tree_width 0
+Number of grid points: 100001
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+Number of grid points: 100001
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+Rank 1 of 2
+Chunk size: 50000, Remainder: 0
+Rank 0 of 2
+Chunk size: 50000, Remainder: 0
+
+=== Timing breakdown ===
+ Total runtime:       214.331 s
+ Communication:         0.085 s (0.0%)
+ Computation:         147.952 s (69.0%)
+ CFL reduction:        43.774 s (20.4%)
+ I/O (gather/write):    0.061 s (0.0%)
+ Initialization:        0.002 s (0.0%)
