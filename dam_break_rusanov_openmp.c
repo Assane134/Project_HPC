@@ -128,7 +128,5 @@ int main() {
   for (int i = 0; i < nc; ++i)
     fprintf(f, "%f\t%f\t%f\n", xc[i], W[0][i], W[1][i] / W[0][i]);
   fclose(f);
-
-  printf("Simulation terminée. Résultats écrits dans output.dat\n");
   return 0;
 }

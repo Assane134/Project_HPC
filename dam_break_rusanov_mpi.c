@@ -219,7 +219,7 @@ int main(int argc, char *argv[]) {
       W[1][i] = Wn[1][i];
     }
     // Affichage terminal (optionnel)
-    // printf("t = %.4f\n", t);
+    printf("t = %.4f\n", t);
   }
 
   // Gather results from all processes
